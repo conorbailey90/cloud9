@@ -354,6 +354,31 @@ nav ul li{
 
 }
 
+.testimonial__slider{
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: var(--gtc);
+    gap: var(--gap);
+    grid-auto-rows: min-content;
+}
+
+.testimonial__container{
+    grid-column: span 4;
+    border: 1px solid grey;
+    padding: 1rem;
+    border-radius: 10px;
+    
+}
+
+.testimonial__container svg{
+    width: 40px;
+}
+
+.reviewer-name{
+    color: #ffeca8;
+    margin-top: 1rem;
+}
+
 #contact{
     background-color: var(--primary-bg-color);
 }
@@ -438,8 +463,12 @@ footer{
 .social{
     width: 25px;
     margin-right: 1rem;
+
 }
 
+.social:hover path{
+    fill: #ffeca8;
+}
   @media only screen and (max-width: 800px) {
     p{
         font-size: 0.833rem;
@@ -553,6 +582,13 @@ footer{
         width: 100%;
     }
     
+    .testimonial__container{
+        grid-column: span 6;
+        border: 1px solid grey;
+        padding: 1rem;
+        border-radius: 10px;
+        
+    }
     
   }
 
@@ -578,3 +614,5 @@ html.lenis, html.lenis body {
   .lenis.lenis-smooth iframe {
     pointer-events: none;
   }
+
+ 
