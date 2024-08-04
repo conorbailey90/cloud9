@@ -20,6 +20,8 @@
 </head>
 <body>
 
+    <!-- Mobile menu -->
+
     <div class="mobile__nav__toggle">
         <span></span>
         <span></span>
@@ -28,20 +30,20 @@
 
     <div class="mobile__nav">
         <div class="mobile__nav__close__toggle">
-     
             <span></span>
-           <span></span>
+            <span></span>
         </div>
+
         <ul>
-            <li><a class="mobile__link" href="#hero">Home</a></li>
-            <li><a class="mobile__link" href="#welcome">About</a></li>
-            <li><a class="mobile__link" href="#menu">Menu</a></li>
-            <li><a class="mobile__link" href="#gallery">Gallery</a></li>
-            <li><a class="mobile__link" href="#contact">Contact</a></li>
+            <li><a class="mobile__link" href="#hero" onclick="lenis.scrollTo('#hero')">Home</a></li>
+            <li><a class="mobile__link" href="#welcome" onclick="lenis.scrollTo('#welcome')">About</a></li>
+            <li><a class="mobile__link" href="#menu" onclick="lenis.scrollTo('#menu')">Menu</a></li>
+            <li><a class="mobile__link" href="#gallery" onclick="lenis.scrollTo('#gallery')">Gallery</a></li>
+            <li><a class="mobile__link" href="#contact" onclick="lenis.scrollTo('#contact')">Contact</a></li>
         </ul>
-
-
     </div>
+
+    <!-- Header / Navbar -->
     
     <header>
         <div class="container">
@@ -94,18 +96,20 @@
 
             <nav class="main__nav">
                 <ul>
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#welcome">About</a></li>
-                    <li><a href="#menu">Menu</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#hero" onclick="lenis.scrollTo('#hero')">Home</a></li>
+                    <li><a href="#welcome" onclick="lenis.scrollTo('#welcome')">About</a></li>
+                    <li><a href="#menu" onclick="lenis.scrollTo('#menu')">Menu</a></li>
+                    <li><a href="#gallery" onclick="lenis.scrollTo('#gallery')">Gallery</a></li>
+                    <li><a href="#contact" onclick="lenis.scrollTo('#contact')">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Heo section -->
+
     <section id="hero">
-        <img class="hero__image" src="./assets/images/test.webp" alt="">
+        <img class="hero__image" src="./assets/images/hero.webp" alt="Coffee">
         <div class="hero__overlay"></div>
         <div class="container">
             <div class="hero__text">
@@ -161,11 +165,11 @@
                     <a href="#welcome"><div class="cta">Find out more</div></a>
                 </div>
             </div>
-            
-           
         </div>
-        
     </section>
+
+    <!-- Welome section -->
+
     <section id="welcome">
         <div class="container">
             <div class="welcome__text">
@@ -180,8 +184,9 @@
                 <img class="trans__image" src="./assets/images/gallery/0.jpg" alt="">
             </div>
         </div>
-
     </section>
+
+    <!-- Menu section -->
 
     <section id="menu">
         <div class="container">
@@ -189,23 +194,22 @@
                 <div class="sticky">
                     <h3>Our Menu</h3>
                     </br>
-                    <p>Welcome to Cloud 9 Café's Menu! Indulge in our wide selection of delicious offerings, from expertly brewed coffees and teas to hearty breakfasts, delectable brunches, and mouth-watering specialty sandwiches. We also serve a variety of pastas, jacket potatoes, soups, smoothies, desserts, and shakes. There's something for everyone at Cloud 9 Café in Billericay, Essex.</p>
+                    <p class="menu__intro">Welcome to Cloud 9 Café's Menu! Indulge in our wide selection of delicious offerings, from expertly brewed coffees and teas to hearty breakfasts, delectable brunches, and mouth-watering specialty sandwiches. We also serve a variety of pastas, jacket potatoes, soups, smoothies, desserts, and shakes. There's something for everyone at Cloud 9 Café in Billericay, Essex.</p>
                     </br>
                     <ul class="menu__links">
-                        <li><a href="#coffees">Coffees</a></li>
-                        <li><a href="#teas">Teas</a></li>
-                        <li><a href="#breakfast">Breakfast</a></li>
-                        <li><a href="#brunch">Brunch</a></li>
-                        <li><a href="#speciality">Specialty Sandwiches</a></li>
-                        <li><a href="#pasta">Pasta</a></li>
-                        <li><a href="#jacket">Jacket Potatoes</a></li>
-                        <li><a href="#soups">Soups</a></li>
-                        <li><a href="#smoothies">Smoothies</a></li>
-                        <li><a href="#desserts">Desserts</a></li>
-                        <li><a href="#shakes">Shakes</a></li>
+                        <li><a href="#coffees" onclick="lenis.scrollTo('#coffees')">Coffees</a></li>
+                        <li><a href="#teas" onclick="lenis.scrollTo('#teas')">Teas</a></li>
+                        <li><a href="#breakfast" onclick="lenis.scrollTo('#breakfast')">Breakfast</a></li>
+                        <li><a href="#brunch" onclick="lenis.scrollTo('#brunch')">Brunch</a></li>
+                        <li><a href="#speciality" onclick="lenis.scrollTo('#speciality')">Specialty Sandwiches</a></li>
+                        <li><a href="#pasta" onclick="lenis.scrollTo('#pasta')">Pasta</a></li>
+                        <li><a href="#jacket" onclick="lenis.scrollTo('#jacket')">Jacket Potatoes</a></li>
+                        <li><a href="#soups" onclick="lenis.scrollTo('#soups')">Soups</a></li>
+                        <li><a href="#smoothies" onclick="lenis.scrollTo('#smoothies')">Smoothies</a></li>
+                        <li><a href="#desserts" onclick="lenis.scrollTo('#desserts')">Desserts</a></li>
+                        <li><a href="#shakes" onclick="lenis.scrollTo('#shakes')">Shakes</a></li>
                     </ul>
                 </div>
-
             </div>
 
             <div class="menu">
@@ -482,6 +486,8 @@
                     </ul>
                 </div>
             </div>
+
+            <!-- Mobile menu -->
 
             <div class="mobile__menu">
                 <div class="accordion">
@@ -783,43 +789,48 @@
             </div>
     </section>
 
+    <!-- Gallery -->
+
     <section id="gallery">
         <div class="container">
             <h3 class="gallery__title">Gallery</h3>
+
             <div class="g__image">
                 <img  src="./assets/images/gallery/1.jpg" alt="">
             </div>
+
             <div class="g__image">
                 <img  src="./assets/images/gallery/2.jpg" alt="">
-              
             </div>
+
             <div class="g__image">
                 <img  src="./assets/images/gallery/3.jpg" alt="">
-              
             </div>
+
             <div class="g__image">
                 <img  src="./assets/images/gallery/4.jpg" alt="">
-              
             </div>
+
             <div class="g__image">
                 <img  src="./assets/images/gallery/5.jpg" alt="">
-              
             </div>
+
             <div class="g__image">
                 <img  src="./assets/images/gallery/6.jpg" alt="">
-              
             </div>
+
             <div class="g__image">
                 <img  src="./assets/images/gallery/7.jpg" alt="">
-              
             </div>
+
             <div class="g__image">
                 <img  src="./assets/images/gallery/8.jpg" alt="">
-              
             </div>
 
         </div>
     </section>
+
+    <!-- Contact -->
 
     <section id="contact">
         <div class="container">
@@ -869,6 +880,8 @@
         </div>
     </section>
 
+    <!-- Testimonials -->
+
     <section id="testimonials">
         <div class="container">
             <h3 style="grid-column: span 12;">Reviews that speak volumes.</h3>
@@ -909,7 +922,6 @@
                     <p class="reviewer-name">- Lisa K.</p>
                 </div>
             </div>
-
         </div>
     </section>
 
@@ -972,9 +984,15 @@
         </div>
     </footer>
 
-    <script src="./lenis.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+   
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="./app.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.9/dist/lenis.min.js"></script> 
+    <script src="./app.js"></script> -->
+
+    <script src="./js/gsap.min.js"></script>
+    <script src="./js/ScrollTrigger.min.js"></script>
+    <script src="./js/lenis.min.js"></script>
+    <script src="./js/app.js"></script>
 </body>
 </html>
